@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivasi Hari Ini</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+    <div id="halaman-form">
+        <div class="container">
+            <h1>🙌 Motivasi Hari Ini</h1>
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" placeholder="Ketik namamu di sini">
+            </div>
+            <div class="form-group">
+                <label for="umur">Umur:</label>
+                <input type="number" id="umur" placeholder="Ketik umurmu">
+            </div>
+            <div class="form-group">
+                <label for="jurusan">Pilih Jurusan:</label>
+                <select id="jurusan">
+                    <option value="Akuntansi">Akuntansi</option>
+                    <option value="Bisnis Retail">Bisnis Retail</option>
+                    <option value="Manajemen Perkantoran">Manajemen Perkantoran</option>
+                    <option value="Desain Komunikasi Visual">Desain Komunikasi Visual</option>
+                    <option value="Teknik Komputer Jaringan">Teknik Komputer Jaringan</option>
+                    <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+                    <option value="Kuliner">Kuliner</option>
+                    <option value="Tata Busana">Tata Busana</option>
+                </select>
+            </div>
+            <button id="tombol-generate">Lihat Motivasi Semangatmu!</button>
+        </div>
+    </div>
+
+    <div id="halaman-hasil" style="display: none;">
+        <div id="story-container">
+            <div id="konten-story">
+                <h2 id="hasil-nama"></h2>
+                <p id="hasil-motivasi"></p>
+                <div class="footer-story">
+                    <span id="hasil-jurusan"></span>
+                    <span>•</span>
+                    <span id="hasil-tanggal"></span>
+                </div>
+            </div>
+        </div>
+        <div class="tombol-aksi">
+            <button id="tombol-download">Unduh Story</button>
+            <button id="tombol-kembali" class="tombol-kembali">Kembali</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
